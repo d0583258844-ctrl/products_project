@@ -1,10 +1,6 @@
 import express from "express";
-import {
-  readProducts,
-  writeProducts,
-  getNextId,
-} from "./utils/products-functions.js";
-import { read } from "fs";
+import { getNextId, writeProducts, readProducts } from "./utils/products-functions.js"
+
 
 const app = express();
 const PORT = 3000;
@@ -196,3 +192,4 @@ app.get("/products/low_stock", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server runing on http://localhst:${PORT}`);
 });
+
