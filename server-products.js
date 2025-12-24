@@ -103,22 +103,22 @@ app.get("/products/search", async (req, res) => {
 });
 
 // תרגיל 7
-app.get("/products/search", async (req, res) => {
-  const products = await readProducts(PATH);
-  const minPrice = parseInt(req.query.minPrice);
-  const maxPrice = parseInt(req.query.maxPrice);
-  const found_product_indexducts = products.filter(
-    (product) => product.price >= minPrice && product.price <= maxPrice
-  );
-  if (!found_product_indexducts || found_product_indexducts.length === 0) {
-    return res
-      .status(404)
-      .json({ message: "Proudcts between choiched prices not found" });
-  }
-  return res
-    .status(200)
-    .json({ message: "Products found", data: found_product_indexducts });
-});
+// app.get("/products/search", async (req, res) => {
+//   const products = await readProducts(PATH);
+//   const minPrice = parseInt(req.query.minPrice);
+//   const maxPrice = parseInt(req.query.maxPrice);
+//   const found_product_indexducts = products.filter(
+//     (product) => product.price >= minPrice && product.price <= maxPrice
+//   );
+//   if (!found_product_indexducts || found_product_indexducts.length === 0) {
+//     return res
+//       .status(404)
+//       .json({ message: "Proudcts between choiched prices not found" });
+//   }
+//   return res
+//     .status(200)
+//     .json({ message: "Products found", data: found_product_indexducts });
+// });
 
 // תרגיל 8
 // app.get("/products/search/", async (req, res) => {
