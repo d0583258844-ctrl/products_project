@@ -1,0 +1,26 @@
+{
+  "name": "new-folder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "server-products.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d0583258844-ctrl/products_project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/d0583258844-ctrl/products_project/issues"
+  },
+  "homepage": "https://github.com/d0583258844-ctrl/products_project#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "nodemon": "^3.1.11"
+  }
+}
