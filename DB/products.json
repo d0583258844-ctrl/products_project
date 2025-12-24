@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop",
+    "price": 3000,
+    "category": "electronics",
+    "stock": 5
+  },
+  {
+    "id": 2,
+    "name": "Mouse",
+    "price": 50,
+    "category": "electronics",
+    "stock": 20
+  },
+  {
+    "id": 3,
+    "name": "Chair",
+    "price": 500,
+    "category": "furniture",
+    "stock": 413
+  },
+  {
+    "id": 4,
+    "name": "Plate",
+    "price": 15,
+    "category": "Home items",
+    "stock": 120
+  },
+  {
+    "id": 5,
+    "name": "Car",
+    "price": 11500,
+    "category": "fun",
+    "stock": 12
+  }
+]
