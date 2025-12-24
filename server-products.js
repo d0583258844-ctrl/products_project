@@ -121,26 +121,26 @@ app.get("/products/search", async (req, res) => {
 });
 
 // תרגיל 8
-app.get("/products/search/", async (req, res) => {
-  const newArr = [];
-  const wordName = req.query.name;
-  const products = await readProducts(PATH);
-  for (let i = 0; i < products.length; i++) {
-    const element = products[i];
-    const check = element.name.includes(wordName);
+// app.get("/products/search/", async (req, res) => {
+//   const newArr = [];
+//   const wordName = req.query.name;
+//   const products = await readProducts(PATH);
+//   for (let i = 0; i < products.length; i++) {
+//     const element = products[i];
+//     const check = element.name.includes(wordName);
 
-    if (check) {
-      newArr.push(element);
-    }
-  }
-  if (newArr.length === 0) {
-    return res
-      .status(404)
-      .json({ message: "Products with thet name not found" });
-  }
-  console.log(newArr);
-  return res.status(200).json({ message: "Products found", data: newArr });
-});
+//     if (check) {
+//       newArr.push(element);
+//     }
+//   }
+//   if (newArr.length === 0) {
+//     return res
+//       .status(404)
+//       .json({ message: "Products with thet name not found" });
+//   }
+//   console.log(newArr);
+//   return res.status(200).json({ message: "Products found", data: newArr });
+// });
 
 // תרגיל 9
 app.patch("/products/:id/stock", async (req, res) => {
