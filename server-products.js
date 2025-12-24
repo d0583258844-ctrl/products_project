@@ -7,6 +7,13 @@ const PORT = 3000;
 const PATH = "DB/products.json";
 app.use(express.json());
 
+app.get("/", async (req, res) => {
+  res.json({
+    message: "Welcome to Todo List API",
+    version: "1.0.0",
+  });
+});
+
 // תרגיל 1
 app.get("/products", async (req, res) => {
   try {
